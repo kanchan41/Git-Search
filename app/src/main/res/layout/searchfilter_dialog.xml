@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Filter Repositories"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="170dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/l1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/lightgray"
+            android:paddingBottom="10dp" />
+
+        <Button
+            android:id="@+id/Languages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v1"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Languages"
+            android:textColor="#fff" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lanrc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/Languages"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"></android.support.v7.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/lanrc"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_cancel_black_24dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
