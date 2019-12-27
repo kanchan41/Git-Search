@@ -32,11 +32,7 @@ public class ContributorAdapter extends RecyclerView.Adapter<ContributorAdapter.
             super(view);
             avtarName = view.findViewById(R.id.avatarName);
             avtarUrl = view.findViewById(R.id.avatar);
-
-
         }
-
-
     }
 
     public Context context;
